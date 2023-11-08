@@ -1,0 +1,25 @@
+//    ---FONTS---
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Mulish&display=swap');
+
+//    ---RESET-STYLE---
+@import "scss/reset";
+
+// 
+
+body {
+  height: 100vh;
+  font-family: $ff-primary;
+}
+
+.wrapper {
+  min-height: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+[class*="__container"] {
+  max-width: 1090px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
