@@ -1,0 +1,70 @@
+@import "variables";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+}
+.logo-header {
+  width: 200px;
+  height: 40px;
+  overflow: hidden;
+}
+.logo-header img {
+  object-fit: cover;
+}
+.header__nav {
+}
+.navbar {
+}
+.navbar__menu {
+}
+.menu__items {
+  display: flex;
+  gap: 49px;
+}
+.menu__item {
+}
+.menu__link {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  color: $f-clr-title;
+  font-weight: 700;
+  font-size: 0,9375rem;
+  letter-spacing: -0,0293125rem;
+  padding-bottom: 10px;
+}
+.menu__link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  transition: all ease-in .28s;
+}
+.menu__link:hover::before {
+  background-color: $clr-more;
+  animation-name: bd-w;
+  animation-duration: .5s;
+}
+@keyframes bd-w {
+  0% {
+    width: 5%;
+  }
+}
+.header__btn {
+  background-color: $clr-primary;
+  border: 2px solid $clr-primary;
+  transition: all ease-in-out .28s;
+}
+.header__btn:hover {
+  cursor: pointer;
+  color: $clr-primary;
+  background-color: #fff;
+}
+.bnt-started {
+}

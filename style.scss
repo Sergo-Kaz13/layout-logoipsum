@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Mulish&display=swap');
 
 //    ---RESET-STYLE---
+@import "scss/variables";
 @import "scss/reset";
 
 // 
@@ -16,10 +17,31 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   overflow: hidden;
+  padding-top: 30px;
 }
 
 [class*="__container"] {
   max-width: 1090px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+@import "scss/header";
+
+.btn-started {
+  position: relative;
+  background-color: $clr-primary;
+  color: #fff;
+  font-size: 1.0625rem;
+  font-weight: bold;
+  letter-spacing: -0.0331875rem;
+  min-height: 60px;
+  padding: 5px;
+  border-radius: 10px;
+  min-width: 211px;
+  transition: all ease-in-out .28s;
+}
+
+.btn-started:active {
+  transform: translate(-1px, 1px);
 }
