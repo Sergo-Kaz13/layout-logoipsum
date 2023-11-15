@@ -1,15 +1,22 @@
 //    ---FONTS---
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Mulish&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Mulish&display=swap");
 
 //    ---RESET-STYLE---
 @import "scss/variables";
 @import "scss/reset";
 
-// 
+@import "scss/header";
+@import "scss/subscription";
+@import "scss/logos";
+@import "scss/subscription-index";
+@import "scss/metrics";
+@import "scss/plan";
+//
 
 body {
   height: 100vh;
   font-family: $ff-primary;
+  color: $f-clr-primary;
 }
 
 .wrapper {
@@ -26,11 +33,11 @@ body {
   margin: 0 auto;
 }
 
-@import "scss/header";
+.main {
+}
 
 .btn-started {
   position: relative;
-  background-color: $clr-primary;
   color: #fff;
   font-size: 1.0625rem;
   font-weight: bold;
@@ -39,7 +46,7 @@ body {
   padding: 5px;
   border-radius: 10px;
   min-width: 211px;
-  transition: all ease-in-out .28s;
+  transition: all ease-in-out 0.28s;
 }
 
 .btn-started:active {

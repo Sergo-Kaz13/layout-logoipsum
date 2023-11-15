@@ -1,0 +1,87 @@
+@import "./variables";
+
+.metrics:not(:last-child) {
+  margin-bottom: 150px;
+}
+.metrics-main {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  min-height: 474px;
+}
+.metrics-main:not(:last-child) {
+  margin-bottom: 150px;
+}
+.metrics__info {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  gap: 30px;
+  width: 50%;
+  max-width: 556px;
+}
+.info-metrics {
+}
+.info-metrics__title {
+  color: $f-clr-title;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: -1.563px;
+}
+.info-metrics__text {
+  max-width: 459px;
+  font-size: 20px;
+  font-family: $ff-more;
+  line-height: 1.5;
+  letter-spacing: -0.625px;
+}
+.info-metrics__link {
+  color: $clr-more;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.531px;
+}
+.metrics__img {
+  width: 50%;
+  max-width: 324px;
+  background: url(../img/section-img-3.png) right top / contain no-repeat;
+}
+.metrics-more {
+  display: flex;
+  justify-content: space-between;
+}
+.services__item {
+  text-align: center;
+}
+.services__img {
+  width: 151px;
+  height: 97px;
+  margin: 0 auto;
+  margin-bottom: 7px;
+}
+.services__img_benchmarks {
+  background: url(../img/icon/Card.png) center / contain no-repeat;
+}
+.services__img_pricing {
+  background: url(../img/icon/Calculator.png) center / contain no-repeat;
+}
+.services__img_retention {
+  background: url(../img/icon/Camera.png) center / contain no-repeat;
+}
+.services__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: -0.75px;
+  color: $f-clr-title;
+  margin-bottom: 20px;
+}
+.services__text {
+  max-width: 307px;
+  font-family: $ff-more;
+  line-height: 1.5;
+  letter-spacing: -0.5px;
+}

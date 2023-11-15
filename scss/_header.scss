@@ -5,6 +5,9 @@
   justify-content: space-between;
   align-items: center;
 }
+.header:not(:last-child) {
+  margin-bottom: 100px;
+}
 .header__logo {
 }
 .logo-header {
@@ -65,6 +68,4 @@
   cursor: pointer;
   color: $clr-primary;
   background-color: #fff;
-}
-.bnt-started {
 }

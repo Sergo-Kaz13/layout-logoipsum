@@ -1,0 +1,161 @@
+@import "./variables";
+.plan {
+}
+.plan__container {
+}
+.header-plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 82px;
+}
+.plan__header {
+}
+.plan-header__title {
+  max-width: 523px;
+  color: $f-clr-title;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: -1.876px;
+}
+.btn-toggle {
+  position: relative;
+  background: #f7f7fb;
+  border-radius: 10px;
+  max-width: 344px;
+  width: 100%;
+  height: 65px;
+  padding: 5px 6px;
+}
+.btn-toggle input[type="checkbox"] {
+  display: block;
+  position: absolute;
+  width: calc(50% - 6px);
+  height: calc(100% - 10px);
+  opacity: 0;
+}
+.btn-toggle input[type="checkbox"]:checked {
+  right: 6px;
+  border-radius: 10px 0 0 10px;
+}
+.btn-toggle input[type="checkbox"]:not(:checked) {
+  left: 6px;
+  top: 5px;
+  border-radius: 0 10px 10px 0;
+}
+.yearly,
+.monthly {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.5px;
+  color: $f-clr-title;
+  transition: all ease-in-out 0.5s;
+}
+.yearly {
+  border-radius: 10px 0 0 10px;
+}
+.monthly {
+  border-radius: 0 10px 10px 0;
+}
+.btn-toggle input:checked ~ .yearly,
+.btn-toggle input:not(:checked) ~ .monthly {
+  background: $clr-more;
+  color: #fff;
+}
+.btn-toggle input:checked ~ .monthly,
+.btn-toggle input:not(:checked) ~ .yearly {
+  cursor: pointer;
+  background: rgba(84, 84, 212, 0.1);
+}
+.plan__items {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding-bottom: 50px;
+}
+.plan__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 330px;
+  min-height: 441px;
+  border-radius: 10px;
+  background: $bg-clr-card;
+  transition: all ease-in-out 0.28s;
+}
+.plan__item:hover {
+  cursor: pointer;
+  background: $clr-primary;
+  box-shadow: 0px 32px 34px 0px rgba(255, 112, 59, 0.32);
+  color: #fff;
+  transform: scale(1.08);
+}
+.plan__item:hover > .plan__item_price {
+  color: #fff;
+}
+.plan__item:hover > .plan__item_btn {
+  color: #fff;
+  background: #9f3919;
+  border: none;
+}
+.plan__item:hover > .plan__item_status {
+  color: rgba(255, 255, 255, 0.7);
+}
+.plan__item_status {
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.56;
+  letter-spacing: -0.563;
+  margin-bottom: 22px;
+}
+.plan__item_price {
+  color: $f-clr-price;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 0.93;
+  letter-spacing: -1.034px;
+  margin-bottom: 28px;
+  transition: all ease-in-out 0.28s;
+}
+.plan__item_price span {
+  font-size: 28px;
+}
+.plan__item_nomenclature {
+  font-family: $ff-more;
+  font-size: 17px;
+  line-height: 2.94;
+  letter-spacing: -0.531px;
+  text-align: center;
+  margin-bottom: 36px;
+  padding: 0;
+}
+.nomenclature-list {
+}
+.nomenclature-list__item {
+}
+.plan__item_btn {
+  align-self: center;
+  max-width: 285px;
+  min-height: 60px;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #eae9f2;
+  background: #fff;
+  color: $clr-more;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.531px;
+  transition: all ease-in-out 0.28s;
+}
+.plan__item_btn:hover {
+  cursor: pointer;
+}

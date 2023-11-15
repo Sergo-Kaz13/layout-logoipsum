@@ -1,0 +1,7 @@
+.logos:not(:last-child) {
+  margin-bottom: 150px;
+}
+.logos__inner {
+  display: flex;
+  justify-content: space-between;
+}

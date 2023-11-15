@@ -45,11 +45,11 @@
               </p>
             </div>
             <div class="info-subscription__block-btn">
-              <button class="info-subscription-btn" type="button">
+              <button class="info-subscription-btn btn-started" type="button">
                 Get Started
               </button>
               <button
-                class="info-subscription-btn__arrow-down"
+                class="info-subscription-btn-arrow-down"
                 type="button"
               ></button>
             </div>
@@ -59,13 +59,23 @@
         </section>
 
         <section class="logos logos__container">
-          <img src="./img/logo/logoipsum.svg" alt="logoipsum" /><img
-            src="./img/logo/logoipsum1.svg"
-            alt="logoipsum"
-          /><img src="./img/logo/logoipsum2.svg" alt="logoipsum" /><img
-            src="./img/logo/logoipsum3.svg"
-            alt="logoipsum"
-          /><img src="./img/logo/logoipsum4.svg" alt="logoipsum" />
+          <div class="logos__inner">
+            <a href="#">
+              <img src="./img/logo/logoipsum.svg" alt="logoipsum" />
+            </a>
+            <a href="#">
+              <img src="./img/logo/logoipsum1.svg" alt="logoipsum" />
+            </a>
+            <a href="#">
+              <img src="./img/logo/logoipsum2.svg" alt="logoipsum" />
+            </a>
+            <a href="#">
+              <img src="./img/logo/logoipsum3.svg" alt="logoipsum" />
+            </a>
+            <a href="#">
+              <img src="./img/logo/logoipsum4.svg" alt="logoipsum" />
+            </a>
+          </div>
         </section>
 
         <section class="subscription-index subscription-index__container">
@@ -101,13 +111,16 @@
 
           <div class="metrics-more">
             <div class="services__item">
-              <div class="services__img"></div>
+              <div class="services__img services__img_benchmarks"></div>
               <h4 class="services__title">Benchmarks</h4>
-              <p class="services__text"></p>
+              <p class="services__text">
+                See how you stack up against comparable companies in similar
+                stages.
+              </p>
             </div>
 
             <div class="services__item">
-              <div class="services__img"></div>
+              <div class="services__img services__img_pricing"></div>
               <h4 class="services__title">Pricing Audit</h4>
               <p class="services__text">
                 Benchmark the health of your monetization and pricing strategy.
@@ -115,7 +128,7 @@
             </div>
 
             <div class="services__item">
-              <div class="services__img"></div>
+              <div class="services__img services__img_retention"></div>
               <h4 class="services__title">Retention Audit</h4>
               <p class="services__text">
                 Audit where revenue leakage exists and where you can increase
@@ -126,30 +139,16 @@
         </section>
 
         <section class="plan plan__container">
-          <div class="header-plan plan-header">
+          <div class="header-plan plan__header">
             <h2 class="plan-header__title">
               Get the right plan for future product.
             </h2>
             <div class="plan-header__toggle btn-toggle">
-              <div class="btn-yearly">
-                <input
-                  type="radio"
-                  id="yearly"
-                  name="toggle"
-                  value="yearly"
-                  checked
-                />
-                <label for="yearly">yearly</label>
-              </div>
-              <div class="btn-yearly">
-                <input
-                  type="radio"
-                  id="monthly"
-                  name="toggle"
-                  value="monthly"
-                />
-                <label for="monthly">monthly</label>
-              </div>
+              <label for="toggle">
+                <input type="checkbox" name="button" id="toggle" checked />
+                <span class="yearly">Yearly</span
+                ><span class="monthly">Monthly</span>
+              </label>
             </div>
           </div>
 
@@ -167,7 +166,7 @@
 
             <div class="plan__item">
               <div class="plan__item_status">Premium</div>
-              <div class="plan__item_price">$29/month</div>
+              <div class="plan__item_price">$29<span>/month</span></div>
               <ul class="plan__item_nomenclature nomenclature-list">
                 <li class="nomenclature-list__item">10 Website</li>
                 <li class="nomenclature-list__item">15 GB Hosting</li>
@@ -178,7 +177,7 @@
 
             <div class="plan__item">
               <div class="plan__item_status">Enterprise</div>
-              <div class="plan__item_price">$49/month</div>
+              <div class="plan__item_price">$49<span>/month</span></div>
               <ul class="plan__item_nomenclature nomenclature-list">
                 <li class="nomenclature-list__item">Unlimited Website</li>
                 <li class="nomenclature-list__item">50 GB Hosting</li>

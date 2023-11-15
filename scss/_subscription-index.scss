@@ -1,0 +1,49 @@
+@import "./variables";
+
+.subscription-index {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+  min-height: 473px;
+}
+.subscription-index:not(:last-child) {
+  margin-bottom: 83px;
+}
+.subscription-index__img {
+  width: 50%;
+  max-width: 350px;
+  background: url(../img/section-img-2.png) left top / contain no-repeat;
+}
+.subscription-index__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px 0;
+  width: 50%;
+  min-width: 556px;
+}
+.info-subscription-index {
+}
+.info-subscription-index__title {
+  max-width: 556px;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: -1.563px;
+  color: $f-clr-title;
+}
+.info-subscription-index__text {
+  max-width: 459px;
+  font-family: $ff-more;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.625px;
+}
+.info-subscription-index__link {
+  text-decoration: none;
+  color: $clr-more;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.531px;
+}
