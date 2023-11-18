@@ -1,7 +1,15 @@
 const burger = document.querySelector(".burger");
 
 burger.addEventListener("click", (e) => {
-  console.log(e.target);
-});
+  const target = e.target;
 
-// burger-active
+  if (target.tagName === "DIV") {
+    target.classList.toggle("burger-active");
+  } else {
+    const divBurger = target.closest("div");
+
+    if (!divBurger) return;
+
+    divBurger.classList.toggle("burger-active");
+  }
+});
