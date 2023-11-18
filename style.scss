@@ -45,7 +45,8 @@ body {
   min-height: 60px;
   padding: 5px;
   border-radius: 10px;
-  min-width: 211px;
+  flex: 0 1 211px;
+  min-width: 120px;
   transition: all ease-in-out 0.28s;
 }
 
