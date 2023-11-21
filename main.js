@@ -12,4 +12,11 @@ burger.addEventListener("click", (e) => {
 
     divBurger.classList.toggle("burger-active");
   }
+
+  if (burger.classList.contains("burger-active")) {
+    document.querySelector("body").style.overflow = "hidden";
+  } else {
+    document.querySelector("body").style.overflow = "visible";
+  }
+  console.log(burger.classList.contains("burger-active"));
 });
