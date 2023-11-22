@@ -320,11 +320,17 @@ h6 {
   gap: 30px;
 }
 
+@media screen and (max-width: 1440px) {
+  .logos:not(:last-child) {
+    margin-bottom: calc(40px + 110 * (100vw - 320px) / 1120);
+  }
+}
 .subscription-index {
   display: flex;
   justify-content: space-between;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
+  -moz-column-gap: 165px;
+       column-gap: 165px;
+  row-gap: 50px;
   min-height: 473px;
 }
 
@@ -333,18 +339,18 @@ h6 {
 }
 
 .subscription-index__img {
-  width: 50%;
   max-width: 350px;
+  width: 100%;
+  height: 473px;
   background: url(../img/section-img-2.png) left top/contain no-repeat;
 }
 
 .subscription-index__info {
+  flex: 1 1 556px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 30px 0;
-  width: 50%;
-  min-width: 556px;
 }
 
 .info-subscription-index__title {
@@ -373,6 +379,30 @@ h6 {
   letter-spacing: -0.531px;
 }
 
+@media screen and (max-width: 1440px) {
+  .subscription-index {
+    -moz-column-gap: calc(30px + 135 * (100vw - 320px) / 1120);
+         column-gap: calc(30px + 135 * (100vw - 320px) / 1120);
+  }
+  .subscription-index__img {
+    height: calc(300px + 173 * (100vw - 320px) / 1120);
+  }
+}
+@media screen and (max-width: 767px) {
+  .subscription-index {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .subscription-index__img {
+    background-position: center;
+  }
+  .subscription-index__info {
+    align-items: center;
+  }
+  .info-subscription-index__title {
+    font-size: calc(35px + 15 * (100vw - 320px) / 1120);
+  }
+}
 .metrics:not(:last-child) {
   margin-bottom: 150px;
 }

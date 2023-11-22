@@ -9,9 +9,9 @@
 }
 
 @media screen and (max-width: 1440px) {
-}
-
-@media screen and (max-width: 767px) {
-  .logos__inner {
+  .logos {
+    &:not(:last-child) {
+      margin-bottom: calc(40px + (150 - 40) * ((100vw - 320px) / (1440 - 320)));
+    }
   }
 }
