@@ -76,7 +76,7 @@ h6 {
 
 .burger {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   display: none;
   flex-direction: column;
   justify-content: space-between;
@@ -157,7 +157,12 @@ h6 {
   background-color: #fff;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 1440px) {
+  .header:not(:last-child) {
+    margin-bottom: calc(50px + 50 * (100vw - 320px) / 1120);
+  }
+}
+@media screen and (max-width: 767px) {
   .header__btn {
     display: none;
   }
@@ -174,6 +179,7 @@ h6 {
   }
   .navbar .burger-active ~ .menu__items {
     position: absolute;
+    z-index: 1;
     top: 0;
     right: 0;
     display: flex;
@@ -208,15 +214,15 @@ h6 {
 }
 
 .info-subscription {
-  width: 50%;
+  flex: 1 1 50%;
   align-self: center;
 }
 
 .info-subscription__title {
   color: #19191B;
-  font-size: 5rem;
+  font-size: 80px;
   font-weight: bold;
-  line-height: 4.8125rem;
+  line-height: 77px;
   letter-spacing: -0.1563125rem;
   margin-bottom: 30px;
 }
@@ -238,6 +244,7 @@ h6 {
 .info-subscription-btn {
   background-color: #5454D4;
   border: 2px solid #5454D4;
+  min-width: 190px !important;
   transition: all ease-in-out 0.28s;
 }
 
@@ -248,10 +255,12 @@ h6 {
 }
 
 .info-subscription-btn-arrow-down {
+  min-width: 60px;
   width: 60px;
+  min-height: 60px;
   height: 60px;
   border-radius: 50%;
-  border: 2px solid #E7E7E7;
+  border: 2px solid #e7e7e7;
   background: url(../img/icon/arrow-down.svg) center/45% no-repeat, #fff;
   transition: all ease-in-out 0.28s;
 }
@@ -266,10 +275,40 @@ h6 {
 }
 
 .subscription__img {
-  width: 50%;
+  flex: 1 1 50%;
+  height: 644px;
   background: url(../img/section-img-1.png) center center/contain no-repeat;
 }
 
+@media screen and (max-width: 1440px) {
+  .subscription:not(:last-child) {
+    margin-bottom: calc(40px + 60 * (100vw - 320px) / 1120);
+  }
+  .info-subscription__title {
+    font-size: calc(40px + 40 * (100vw - 320px) / 1120);
+    line-height: calc(47px + 30 * (100vw - 320px) / 1120);
+  }
+  .img-subscription {
+    height: calc(350px + 294 * (100vw - 320px) / 1120);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .info-subscription__title {
+    font-size: 4em;
+  }
+}
+@media screen and (max-width: 767px) {
+  .subscription {
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+  .info-subscription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
 .logos:not(:last-child) {
   margin-bottom: 150px;
 }
@@ -277,6 +316,8 @@ h6 {
 .logos__inner {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .subscription-index {

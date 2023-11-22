@@ -4,4 +4,14 @@
 .logos__inner {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+@media screen and (max-width: 1440px) {
+}
+
+@media screen and (max-width: 767px) {
+  .logos__inner {
+  }
 }
